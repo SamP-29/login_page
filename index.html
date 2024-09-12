@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="hospital-logo.png" alt="Hospital Logo">
+        </div>
+        <h2>Welcome to <span class="hospital-name">Carewell Hospital</span></h2>
+        <p>Please log in to continue</p>
+        
+        <form class="login-form">
+            <!-- Username/Email Field -->
+            <div class="form-group">
+                <label for="username">Username/Email</label>
+                <input type="text" id="username" placeholder="Enter your email" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            
+            <!-- Show/Hide Password Checkbox -->
+            <div class="form-group">
+                <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Login</button>
+
+            <!-- Forgot Password and Register Links -->
+            <div class="options">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <a href="#" class="register">New User? Register</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
